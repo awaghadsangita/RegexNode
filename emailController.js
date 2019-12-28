@@ -1,0 +1,24 @@
+let emailValidate=require("./emailRegex");
+
+let error1=emailValidate("abc@yahoo.com");
+let error2=emailValidate("abc-100@yahoo.com");
+let error3=emailValidate("abc.100@yahoo.com");
+let error4=emailValidate("abc111@abc.com");
+let error5=emailValidate("abc-100@abc.net");
+let error6=emailValidate("abc.100@abc.com.au");
+let error7=emailValidate("abc@1.com");
+let error8=emailValidate("abc@gmail.com.com");
+let error9=emailValidate("abc+100@gmail.com");
+let error01=emailValidate("abc");
+let error02=emailValidate("abc@.com.my");
+let error03=emailValidate("abc123@gmail.a");
+let error04=emailValidate("abc123@.com");
+let error05=emailValidate("abc123@.com.com");
+let error06=emailValidate(".abc@abc.com");
+let error07=emailValidate("abc()*@gmail.com");
+let error08=emailValidate("abc@%*.com");
+let error09=emailValidate("abc..2002@gmail.com");
+let error10=emailValidate("abc.@gmail.com");
+let error11=emailValidate("abc@abc@gmail.com");
+let error12=emailValidate("abc@gmail.com.1a");
+let error13=emailValidate("abc@gmail.com.aa.au");
